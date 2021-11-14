@@ -17,9 +17,9 @@ extension BoardGame {
         
         let data = DataManager.shared
         
-        for index in 0..<data.name.count {
+        for index in 0..<data.gameName.count {
             let boardGame = BoardGame(
-                name: data.name[index],
+                name: data.gameName[index],
                 description: data.description[index],
                 price: data.price[index]
             )

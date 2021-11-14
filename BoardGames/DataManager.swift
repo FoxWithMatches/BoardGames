@@ -11,7 +11,7 @@ class DataManager {
     
     private init() {}
     
-    let name = [
+    let gameName = [
         "Шакал", "Монополия", "Имаджинариум"
     ]
     
@@ -90,4 +90,7 @@ class DataManager {
     let price = [
         "3590р", "2590р", "2690р"
     ]
+    
+    let userName = "User"
+    let phone = "12345"
 }
