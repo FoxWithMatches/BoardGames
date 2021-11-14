@@ -118,7 +118,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="purchaseButton" destination="9BR-F5-Iwc" eventType="touchUpInside" id="W6m-xI-uF6"/>
-                                            <segue destination="KVQ-NI-Ol5" kind="presentation" identifier="" modalPresentationStyle="fullScreen" id="KDe-Qh-g6J"/>
+                                            <segue destination="KVQ-NI-Ol5" kind="presentation" identifier="purchase" modalPresentationStyle="fullScreen" id="KDe-Qh-g6J"/>
                                         </connections>
                                     </button>
                                 </subviews>
