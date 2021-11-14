@@ -13,6 +13,7 @@
 		9895BF47273EC2E1008713DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9895BF45273EC2E1008713DE /* Main.storyboard */; };
 		9895BF49273EC2E5008713DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9895BF48273EC2E5008713DE /* Assets.xcassets */; };
 		9895BF4C273EC2E5008713DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9895BF4A273EC2E5008713DE /* LaunchScreen.storyboard */; };
+		EAEF0FFA274128030032D2CD /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEF0FF9274128030032D2CD /* PurchaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9895BF48273EC2E5008713DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9895BF4B273EC2E5008713DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9895BF4D273EC2E5008713DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAEF0FF9274128030032D2CD /* PurchaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PurchaseViewController.swift; path = "../../../doc/swiftBook/1.23поток/ATS/2.23/2.8APP/BoardGames/BoardGames/PurchaseViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				9895BF3F273EC2E1008713DE /* AppDelegate.swift */,
 				9895BF41273EC2E1008713DE /* SceneDelegate.swift */,
 				9895BF43273EC2E1008713DE /* ViewController.swift */,
+				EAEF0FF9274128030032D2CD /* PurchaseViewController.swift */,
 				9895BF45273EC2E1008713DE /* Main.storyboard */,
 				9895BF48273EC2E5008713DE /* Assets.xcassets */,
 				9895BF4A273EC2E5008713DE /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9895BF44273EC2E1008713DE /* ViewController.swift in Sources */,
+				EAEF0FFA274128030032D2CD /* PurchaseViewController.swift in Sources */,
 				9895BF40273EC2E1008713DE /* AppDelegate.swift in Sources */,
 				9895BF42273EC2E1008713DE /* SceneDelegate.swift in Sources */,
 			);
