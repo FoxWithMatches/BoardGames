@@ -2,15 +2,10 @@
 //  PurchaseViewController.swift
 //  BoardGames
 //
-//  Created by Павел Цыганов on 14.11.2021.
+//  Created by Alisa Ts on 14.11.2021.
 //
 
 import UIKit
-
-// добавить unwind
-// инициализировать game экземпляр модели
-// передать с предыдущего экрана картинку, название, цену
-// должно быть все норм сейчас
 
 class PurchaseViewController: UIViewController {
 
@@ -20,12 +15,15 @@ class PurchaseViewController: UIViewController {
     @IBOutlet var nameTF: UITextField!
     @IBOutlet var phoneTF: UITextField!
     
-//    var game: Game!
+//TODO: - Gроверить передачу моделей и их данные
+    
+//    var game: BoardGame!
+//    ptivate let user = User.getUserData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        imageOfGame.image = UIImage(named: game.title)
-//        nameGame.text = game.title
+//        imageOfGame.image = UIImage(named: game.name)
+//        nameGame.text = game.name
 //        priceGame.text = "Цена: \(game.price)"
         
         nameTF.delegate = self
@@ -36,27 +34,21 @@ class PurchaseViewController: UIViewController {
         
         phoneTF.isEnabled = true
         phoneTF.enablesReturnKeyAutomatically = true
-        
     }
+  
+//TODO: - проверить алерты -
     
     @IBAction func purchaseButton() {
-        let name = "User"
-        let phone = "12345"
-        
-        guard nameTF.text == name else {
-            showAlert(title: "Неверное имя", message: "Используйте 'User'")
-            return
-        }
-        guard phoneTF.text == phone else {
-            showAlert(title: "Неверный номер телефона", message: "Используйте 12345")
-            return
-        }
+//        guard nameTF.text == user.name else {
+//            showAlert(title: "Неверное имя", message: "Используйте 'User'")
+//            return
+//        }
+//        guard phoneTF.text == user.phone else {
+//            showAlert(title: "Неверный номер телефона", message: "Используйте 12345")
+//            return
+//        }
     }
-//    @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
-//
-//    } перенести на экран TableView
 }
-
 
 extension PurchaseViewController {
     private func showAlert(title: String, message: String) {
