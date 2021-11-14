@@ -8,7 +8,7 @@
 import UIKit
 
 // добавить unwind
-// инициализировать game экземпляр
+// инициализировать game экземпляр модели
 // передать с предыдущего экрана картинку, название, цену
 
 class PurchaseViewController: UIViewController {
