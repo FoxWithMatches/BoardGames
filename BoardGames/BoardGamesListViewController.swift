@@ -40,4 +40,14 @@ class BoardGamesListViewController: UITableViewController {
         cell.contentConfiguration = content
         return cell
     }
+    
+// MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let descriptionVC = segue.destination as? DescriptionViewController else {return}
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let game = boardGamesList[indexPath.row]
+        descriptionVC.game = game
+    }
+    
 }
