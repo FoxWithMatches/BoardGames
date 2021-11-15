@@ -7,7 +7,7 @@
 
 struct BoardGame {
     let name: String
-//    let description: String
+    let description: String
     let price: String
 }
 
@@ -20,7 +20,7 @@ extension BoardGame {
         for index in 0..<data.gameName.count {
             let boardGame = BoardGame(
                 name: data.gameName[index],
-//                description: data.description[index],
+                description: data.description[index],
                 price: data.price[index]
             )
             boardGames.append(boardGame)
