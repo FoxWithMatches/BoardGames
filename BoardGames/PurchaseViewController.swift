@@ -15,7 +15,7 @@ class PurchaseViewController: UIViewController {
     @IBOutlet var nameTF: UITextField!
     @IBOutlet var phoneTF: UITextField!
     
-//TODO: - Gроверить передачу моделей и их данные
+    //TODO: - Gроверить передачу моделей и их данные
     
 //    var game: BoardGame!
 //    ptivate let user = User.getUserData()
@@ -51,6 +51,7 @@ class PurchaseViewController: UIViewController {
 }
 
 extension PurchaseViewController {
+ 
     private func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
@@ -60,6 +61,8 @@ extension PurchaseViewController {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
+    
+    
 }
 
 extension PurchaseViewController: UITextFieldDelegate {
