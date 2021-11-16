@@ -9,16 +9,29 @@ import UIKit
 
 class DescriptionViewController: UIViewController {
 
-    @IBOutlet var nameOfGameLabel: UILabel!
     @IBOutlet var imageOfGameLabel: UIImageView!
     @IBOutlet var descriptionLabel: UITextView!
+    @IBOutlet var priceLabel: UILabel!
     
     var game: BoardGame!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameOfGameLabel.text = game.name
+        navigationItem.title = game.name
         imageOfGameLabel.image = UIImage(named: game.name)
         descriptionLabel.text = game.description
+        priceLabel.text = "Цена: \(game.price)уб."
     }
-}
+    
+    // MARK: - Navigation
+        
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            guard let purchaseVC = segue.destination as? PurchaseViewController else {return}
+            purchaseVC.game = game
+        }
+        
+    }
+    
+    
+    
+
