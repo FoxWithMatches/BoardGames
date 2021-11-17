@@ -54,7 +54,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2Q-fY-KS2">
-                                <rect key="frame" x="20" y="317" width="335" height="31"/>
+                                <rect key="frame" x="52" y="317" width="271" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Купить">
                                     <color key="baseBackgroundColor" red="0.82352948189999997" green="0.69411766529999996" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -89,7 +89,7 @@
                             <constraint firstItem="uSc-S1-eVu" firstAttribute="leading" secondItem="FZP-FS-m9b" secondAttribute="leading" constant="20" id="2EW-YQ-BFG"/>
                             <constraint firstItem="E2Q-fY-KS2" firstAttribute="top" secondItem="gf4-Fs-WWK" secondAttribute="bottom" constant="17" id="AW9-fb-xce"/>
                             <constraint firstItem="FZP-FS-m9b" firstAttribute="trailing" secondItem="gf4-Fs-WWK" secondAttribute="trailing" constant="137" id="FTh-74-Kb6"/>
-                            <constraint firstItem="E2Q-fY-KS2" firstAttribute="leading" secondItem="FZP-FS-m9b" secondAttribute="leading" constant="20" id="Fah-0h-vK1"/>
+                            <constraint firstItem="E2Q-fY-KS2" firstAttribute="leading" secondItem="FZP-FS-m9b" secondAttribute="leading" constant="52" id="Fah-0h-vK1"/>
                             <constraint firstItem="uSc-S1-eVu" firstAttribute="top" secondItem="FZP-FS-m9b" secondAttribute="top" constant="24" id="G3E-QO-Me9"/>
                             <constraint firstItem="hM6-C8-bfK" firstAttribute="leading" secondItem="FZP-FS-m9b" secondAttribute="leading" constant="20" id="VYH-VM-Ve6"/>
                             <constraint firstItem="FZP-FS-m9b" firstAttribute="trailing" secondItem="hM6-C8-bfK" secondAttribute="trailing" constant="20" id="VcK-GF-hSR"/>
@@ -99,7 +99,7 @@
                             <constraint firstItem="FZP-FS-m9b" firstAttribute="bottom" secondItem="hM6-C8-bfK" secondAttribute="bottom" constant="38" id="uPx-CC-Wtc"/>
                             <constraint firstItem="E2Q-fY-KS2" firstAttribute="top" secondItem="uSc-S1-eVu" secondAttribute="bottom" constant="52" id="wbD-xm-zSa"/>
                             <constraint firstItem="gf4-Fs-WWK" firstAttribute="top" secondItem="uSc-S1-eVu" secondAttribute="bottom" constant="14" id="xVY-60-c4y"/>
-                            <constraint firstItem="FZP-FS-m9b" firstAttribute="trailing" secondItem="E2Q-fY-KS2" secondAttribute="trailing" constant="20" id="xVg-hF-ebM"/>
+                            <constraint firstItem="FZP-FS-m9b" firstAttribute="trailing" secondItem="E2Q-fY-KS2" secondAttribute="trailing" constant="52" id="xVg-hF-ebM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="pKE-YF-1N9"/>
