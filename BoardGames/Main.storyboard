@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="EX4-Qv-URc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="boardGameCell" id="EX4-Qv-URc">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EX4-Qv-URc" id="Aor-CQ-NYw">
@@ -25,7 +25,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="zko-nN-vgd" kind="show" identifier="description" id="wQk-tx-jAv"/>
+                                    <segue destination="zko-nN-vgd" kind="show" identifier="description" trigger="accessoryAction" id="PLI-SG-lVb"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -40,7 +40,7 @@
             </objects>
             <point key="canvasLocation" x="3530.434782608696" y="206.91964285714286"/>
         </scene>
-        <!--Info-->
+        <!--View Controller-->
         <scene sceneID="PVs-TO-WQO">
             <objects>
                 <viewController id="zko-nN-vgd" sceneMemberID="viewController">
@@ -68,7 +68,7 @@
                         <viewLayoutGuide key="safeArea" id="FZP-FS-m9b"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Info" id="pKE-YF-1N9"/>
+                    <navigationItem key="navigationItem" id="pKE-YF-1N9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gq-m2-l9h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

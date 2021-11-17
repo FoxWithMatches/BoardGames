@@ -23,13 +23,10 @@ class BoardGamesListViewController: UITableViewController {
         return searchController.isActive && !searchBarIsEmpty
     }
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 80
         navigationController?.navigationBar.prefersLargeTitles = true
-        
-        //Setup the search controller
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Найти настолку"
@@ -46,7 +43,7 @@ class BoardGamesListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "boardGameCell", for: indexPath)
         
         let boardGame: BoardGame
         
@@ -81,6 +78,18 @@ class BoardGamesListViewController: UITableViewController {
             boardGame = boardGamesList[indexPath.row]
         }
         performSegue(withIdentifier: "description", sender: boardGame)
+    }
+    
+//    //MARK: - Navigation
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        guard let descriptionVC = segue.destination as? DescriptionViewController else {return}
+//        guard let indexPath = tableView.indexPathForSelectedRow else {return}
+//
+//        //Реализовать логику перехода после мерджа
+//    }
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+       
     }
 }
 
