@@ -13,6 +13,13 @@
 		9895BF49273EC2E5008713DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9895BF48273EC2E5008713DE /* Assets.xcassets */; };
 		9895BF4C273EC2E5008713DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9895BF4A273EC2E5008713DE /* LaunchScreen.storyboard */; };
 		EAA93C8527465A110013AA23 /* GratitudeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA93C8427465A110013AA23 /* GratitudeViewController.swift */; };
+		9895BF49273EC2E5008713DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9895BF48273EC2E5008713DE /* Assets.xcassets */; };
+		9895BF4C273EC2E5008713DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9895BF4A273EC2E5008713DE /* LaunchScreen.storyboard */; };
+		98B138BD273FDC270055AE8A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B138BC273FDC270055AE8A /* DataManager.swift */; };
+		98B138BF273FDF470055AE8A /* BoardGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B138BE273FDF470055AE8A /* BoardGame.swift */; };
+		98B138C1273FE1C50055AE8A /* BoardGamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B138C0273FE1C50055AE8A /* BoardGamesListViewController.swift */; };
+		98B138C3274147420055AE8A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B138C2274147420055AE8A /* User.swift */; };
+		98B138C527417F0B0055AE8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B138C427417F0B0055AE8A /* Main.storyboard */; };
 		EFE9E15E27413925004460FC /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE9E15D27413925004460FC /* PurchaseViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +32,14 @@
 		9895BF4B273EC2E5008713DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9895BF4D273EC2E5008713DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAA93C8427465A110013AA23 /* GratitudeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeViewController.swift; sourceTree = "<group>"; };
+		9895BF48273EC2E5008713DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9895BF4B273EC2E5008713DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9895BF4D273EC2E5008713DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98B138BC273FDC270055AE8A /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		98B138BE273FDF470055AE8A /* BoardGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGame.swift; sourceTree = "<group>"; };
+		98B138C0273FE1C50055AE8A /* BoardGamesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGamesListViewController.swift; sourceTree = "<group>"; };
+		98B138C2274147420055AE8A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		98B138C427417F0B0055AE8A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EFE9E15D27413925004460FC /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +78,13 @@
 				EFE9E15D27413925004460FC /* PurchaseViewController.swift */,
 				9895BF45273EC2E1008713DE /* Main.storyboard */,
 				EAA93C8427465A110013AA23 /* GratitudeViewController.swift */,
+				98B138BE273FDF470055AE8A /* BoardGame.swift */,
+				98B138C2274147420055AE8A /* User.swift */,
+				98B138BC273FDC270055AE8A /* DataManager.swift */,
+				98B138C0273FE1C50055AE8A /* BoardGamesListViewController.swift */,
+				EFE9E15D27413925004460FC /* PurchaseViewController.swift */,
 				9895BF48273EC2E5008713DE /* Assets.xcassets */,
+				98B138C427417F0B0055AE8A /* Main.storyboard */,
 				9895BF4A273EC2E5008713DE /* LaunchScreen.storyboard */,
 				9895BF4D273EC2E5008713DE /* Info.plist */,
 			);
@@ -128,9 +149,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98B138C527417F0B0055AE8A /* Main.storyboard in Resources */,
 				9895BF4C273EC2E5008713DE /* LaunchScreen.storyboard in Resources */,
 				9895BF49273EC2E5008713DE /* Assets.xcassets in Resources */,
-				9895BF47273EC2E1008713DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,23 +163,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAA93C8527465A110013AA23 /* GratitudeViewController.swift in Sources */,
+				98B138BF273FDF470055AE8A /* BoardGame.swift in Sources */,
+				98B138BD273FDC270055AE8A /* DataManager.swift in Sources */,
+				98B138C3274147420055AE8A /* User.swift in Sources */,
 				EFE9E15E27413925004460FC /* PurchaseViewController.swift in Sources */,
 				9895BF40273EC2E1008713DE /* AppDelegate.swift in Sources */,
 				9895BF42273EC2E1008713DE /* SceneDelegate.swift in Sources */,
+				98B138C1273FE1C50055AE8A /* BoardGamesListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9895BF45273EC2E1008713DE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9895BF46273EC2E1008713DE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9895BF4A273EC2E5008713DE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
