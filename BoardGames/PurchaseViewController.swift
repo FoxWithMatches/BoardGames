@@ -18,7 +18,7 @@ class PurchaseViewController: UIViewController {
     //TODO: - Gроверить передачу моделей и их данные
     
 //    var game: BoardGame!
-//    ptivate let user = User.getUserData()
+//    private let user = User.getUserData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,8 +61,6 @@ extension PurchaseViewController {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
-    
-    
 }
 
 extension PurchaseViewController: UITextFieldDelegate {

@@ -34,7 +34,9 @@
                             <outlet property="delegate" destination="V5N-ET-U5Z" id="kWY-my-8bS"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="2lf-1j-Hu5"/>
+                    <tabBarItem key="tabBarItem" title="Игры" image="square.stack.3d.up.fill" catalog="system" id="2lf-1j-Hu5">
+                        <color key="badgeColor" red="0.36470884079999999" green="0.17254370450000001" blue="0.1411795616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Root View Controller" id="297-eQ-hKT"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ep6-Dc-EDq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -269,7 +271,7 @@
             </objects>
             <point key="canvasLocation" x="5199.532710280374" y="219.00647948164149"/>
         </scene>
-        <!--Item-->
+        <!--Главная-->
         <scene sceneID="HOB-6v-0aR">
             <objects>
                 <viewController id="cBr-yN-SAf" sceneMemberID="viewController">
@@ -288,7 +290,9 @@
                         <viewLayoutGuide key="safeArea" id="Hem-zX-2yz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="IVj-n6-6aW"/>
+                    <tabBarItem key="tabBarItem" title="Главная" image="house.fill" catalog="system" id="IVj-n6-6aW">
+                        <color key="badgeColor" red="0.36470884079999999" green="0.17254370450000001" blue="0.1411795616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="57X-td-25c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -312,7 +316,7 @@
             </objects>
             <point key="canvasLocation" x="768.11594202898561" y="206.91964285714286"/>
         </scene>
-        <!--Item-->
+        <!--О нас-->
         <scene sceneID="Hiy-yc-8kH">
             <objects>
                 <viewController id="X1c-65-Cwp" sceneMemberID="viewController">
@@ -331,7 +335,9 @@
                         <viewLayoutGuide key="safeArea" id="MPN-Y5-kaI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="PVC-X2-Qi9"/>
+                    <tabBarItem key="tabBarItem" title="О нас" image="person.3.fill" catalog="system" id="PVC-X2-Qi9">
+                        <color key="badgeColor" red="0.36470884079999999" green="0.17254370450000001" blue="0.1411795616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N7i-pE-mEN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -347,6 +353,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.36470884079999999" green="0.17254370450000001" blue="0.1411795616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.36470884079999999" green="0.17254370450000001" blue="0.1411795616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="V5N-ET-U5Z" kind="relationship" relationship="viewControllers" id="LqW-AV-NdC"/>
@@ -360,12 +368,15 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nas-PU-Tlr"/>
+        <segue reference="4Jw-Bg-xa2"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="938.66668701171875" height="626.66668701171875"/>
         <image name="background" width="1280" height="1920"/>
         <image name="headerImage" width="1155.3333740234375" height="1730.6666259765625"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="square.stack.3d.up.fill" catalog="system" width="128" height="124"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
