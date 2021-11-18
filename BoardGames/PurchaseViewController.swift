@@ -18,7 +18,7 @@ class PurchaseViewController: UIViewController {
 //TODO: - Gроверить передачу моделей и их данные
     
 //    var game: BoardGame!
-//    ptivate let user = User.getUserData()
+    private var user = User(name: "", phone: "")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,11 +34,24 @@ class PurchaseViewController: UIViewController {
         
         phoneTF.isEnabled = true
         phoneTF.enablesReturnKeyAutomatically = true
+        
+        nameTF.text = String(user.name)
+        phoneTF.text = String(user.phone)
     }
   
 //TODO: - проверить алерты -
     
     @IBAction func purchaseButton() {
+        guard let inputText = nameTF.text, !inputText.isEmpty else {
+            showAlert(title: "Ошибка!", message: "Введите имя")
+            return
+        }
+        guard let inputText = phoneTF.text, !inputText.isEmpty else {
+            showAlert(title: "Ошибка!", message: "Введите номер телефона")
+            return
+        }
+        
+//TODO: - Удалить проверку имени пользователя
 //        guard nameTF.text == user.name else {
 //            showAlert(title: "Неверное имя", message: "Используйте 'User'")
 //            return
@@ -48,9 +61,15 @@ class PurchaseViewController: UIViewController {
 //            return
 //        }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let gratitudeVC = segue.destination as? GratitudeViewController else { return }
+        gratitudeVC.user = user
+    }
 }
 
 extension PurchaseViewController {
+ 
     private func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
@@ -66,6 +85,16 @@ extension PurchaseViewController: UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        guard let newValue = textField.text else { return }
+        
+        if textField == nameTF {
+            user.name = newValue
+        } else {
+            user.phone = newValue
+        }
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
