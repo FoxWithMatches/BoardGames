@@ -12,6 +12,7 @@
 		9895BF47273EC2E1008713DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9895BF45273EC2E1008713DE /* Main.storyboard */; };
 		9895BF49273EC2E5008713DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9895BF48273EC2E5008713DE /* Assets.xcassets */; };
 		9895BF4C273EC2E5008713DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9895BF4A273EC2E5008713DE /* LaunchScreen.storyboard */; };
+		EAA93C8527465A110013AA23 /* GratitudeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA93C8427465A110013AA23 /* GratitudeViewController.swift */; };
 		EFE9E15E27413925004460FC /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE9E15D27413925004460FC /* PurchaseViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		9895BF48273EC2E5008713DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9895BF4B273EC2E5008713DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9895BF4D273EC2E5008713DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAA93C8427465A110013AA23 /* GratitudeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeViewController.swift; sourceTree = "<group>"; };
 		EFE9E15D27413925004460FC /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +62,7 @@
 				9895BF41273EC2E1008713DE /* SceneDelegate.swift */,
 				EFE9E15D27413925004460FC /* PurchaseViewController.swift */,
 				9895BF45273EC2E1008713DE /* Main.storyboard */,
+				EAA93C8427465A110013AA23 /* GratitudeViewController.swift */,
 				9895BF48273EC2E5008713DE /* Assets.xcassets */,
 				9895BF4A273EC2E5008713DE /* LaunchScreen.storyboard */,
 				9895BF4D273EC2E5008713DE /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA93C8527465A110013AA23 /* GratitudeViewController.swift in Sources */,
 				EFE9E15E27413925004460FC /* PurchaseViewController.swift in Sources */,
 				9895BF40273EC2E1008713DE /* AppDelegate.swift in Sources */,
 				9895BF42273EC2E1008713DE /* SceneDelegate.swift in Sources */,

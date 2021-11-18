@@ -265,6 +265,9 @@
                             <constraint firstAttribute="bottom" secondItem="cHT-hC-KQb" secondAttribute="bottom" id="z7n-6O-TiO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="rsJ-ps-AhU" id="3II-lk-BZQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxF-mv-fvN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="4Sb-MN-wb6" userLabel="Exit" sceneMemberID="exit"/>
@@ -368,7 +371,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4Jw-Bg-xa2"/>
+        <segue reference="nas-PU-Tlr"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="938.66668701171875" height="626.66668701171875"/>
