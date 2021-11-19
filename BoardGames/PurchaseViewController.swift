@@ -74,6 +74,7 @@ class PurchaseViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let gratitudeVC = segue.destination as? GratitudeViewController else { return }
         gratitudeVC.user = user
+        
     }
     
 //TODO: - проверить алерты -
@@ -118,7 +119,7 @@ extension PurchaseViewController: UITextFieldDelegate {
             phoneTF.becomeFirstResponder()
         } else {
             purchaseButton()
-            performSegue(withIdentifier: "purchase", sender: nil)
+            performSegue(withIdentifier: "gratitude", sender: nil)
         }
         return true
     }
