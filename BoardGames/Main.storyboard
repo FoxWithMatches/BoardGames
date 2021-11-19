@@ -272,7 +272,7 @@
         <!--Item-->
         <scene sceneID="Zdr-tT-8dM">
             <objects>
-                <viewController id="r3a-Qm-xyI" sceneMemberID="viewController">
+                <viewController id="r3a-Qm-xyI" customClass="WelcomeViewController" customModule="BoardGames" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aV7-AK-eZe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -282,14 +282,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="He9-33-3q8">
-                                <rect key="frame" x="16" y="60" width="288" height="429"/>
+                                <rect key="frame" x="16" y="60" width="288" height="215"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Welcome" translatesAutoresizingMaskIntoConstraints="NO" id="9Ff-GK-V4I">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Ff-GK-V4I">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="184"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="none" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="P0A-WZ-lo3">
-                                        <rect key="frame" x="0.0" y="192" width="288" height="237"/>
-                                        <mutableString key="text">Настольные игры это отличный способ времяпровождения, разнообразия досуга и развлечения.  Каждая из подобных игр дарит не только яркие впечатления, азарт, но и межличностную коммуникацию, глубинная польза которой неоценима для каждого человека.  У нас вы найдете игру на любой вкус и возраст!</mutableString>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="none" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="P0A-WZ-lo3">
+                                        <rect key="frame" x="0.0" y="192" width="288" height="23"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -308,6 +307,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="MnX-nY-uUu"/>
+                    <connections>
+                        <outlet property="welcomeImage" destination="9Ff-GK-V4I" id="BbY-eq-bP3"/>
+                        <outlet property="welcomeLabel" destination="P0A-WZ-lo3" id="sDd-p3-QP8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tsf-aR-Xhe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -383,7 +386,6 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="938.66668701171875" height="626.66668701171875"/>
-        <image name="Welcome" width="1280" height="720"/>
         <image name="background" width="1280" height="1920"/>
         <image name="headerImage" width="1155.3333740234375" height="1730.6666259765625"/>
         <systemColor name="systemBackgroundColor">
