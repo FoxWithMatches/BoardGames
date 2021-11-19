@@ -16,20 +16,18 @@ class PurchaseViewController: UIViewController {
     @IBOutlet var phoneTF: UITextField!
     @IBOutlet var stackBottomConstraint: NSLayoutConstraint!
     
-//TODO: - Gроверить передачу моделей и их данные
     
     var game: BoardGame!
-//    ptivate let user = User.getUserData()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        imageOfGame.image = UIImage(named: game.name)
-        nameGame.text = game.name
-        priceGame.text = "Цена: \(game.price)"
+            
     private var user = User.getUserData()
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        super.viewDidLoad()
+        imageOfGame.image = UIImage(named: game.name)
+        nameGame.text = game.name
+        priceGame.text = "Цена: \(game.price)"
         
         nameTF.delegate = self
         nameTF.returnKeyType = .next
