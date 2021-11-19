@@ -14,11 +14,12 @@ class PurchaseViewController: UIViewController {
     @IBOutlet var priceGame: UILabel!
     @IBOutlet var nameTF: UITextField!
     @IBOutlet var phoneTF: UITextField!
+    @IBOutlet var stackBottomConstraint: NSLayoutConstraint!
     
 //TODO: - Gроверить передачу моделей и их данные
     
-    private var user = User(name: "", phone: "")
-    
+    private var user = User.getUserData()
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,34 +34,52 @@ class PurchaseViewController: UIViewController {
         
         nameTF.text = String(user.name)
         phoneTF.text = String(user.phone)
+        
+        initialSetup()
     }
   
-//TODO: - проверить алерты -
-    
-    @IBAction func purchaseButton() {
-        guard let inputText = nameTF.text, !inputText.isEmpty else {
-            showAlert(title: "Ошибка!", message: "Введите имя")
-            return
-        }
-        guard let inputText = phoneTF.text, !inputText.isEmpty else {
-            showAlert(title: "Ошибка!", message: "Введите номер телефона")
-            return
-        }
+    private func initialSetup() {
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hideKeyboard)))
         
-//TODO: - Удалить проверку имени пользователя
-//        guard nameTF.text == user.name else {
-//            showAlert(title: "Неверное имя", message: "Используйте 'User'")
-//            return
-//        }
-//        guard phoneTF.text == user.phone else {
-//            showAlert(title: "Неверный номер телефона", message: "Используйте 12345")
-//            return
-//        }
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    @objc private func hideKeyboard() {
+        self.view.endEditing(true)
+    }
+    
+    @objc private func keyboardWillShow(notification: NSNotification) {
+        
+        if let keyboardFrame: NSValue =  notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+            let keyboardHeight = keyboardFrame.cgRectValue.height
+            self.stackBottomConstraint.constant = keyboardHeight + 10
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    @objc private func keyboardWillHide(notification: NSNotification) {
+        
+        if let keyboarddFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+            let keyboardHeight = keyboarddFrame.cgRectValue.height
+            self.stackBottomConstraint.constant = keyboardHeight - 100
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let gratitudeVC = segue.destination as? GratitudeViewController else { return }
         gratitudeVC.user = user
+    }
+    
+//TODO: - проверить алерты -
+    
+    @IBAction func purchaseButton() {
+        
     }
 }
 
@@ -70,6 +89,7 @@ extension PurchaseViewController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
             self.nameTF.text = ""
+            self.phoneTF.text = ""
         }
         
         alert.addAction(okAction)

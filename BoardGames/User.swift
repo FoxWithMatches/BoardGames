@@ -8,4 +8,8 @@
 struct User {
     var name: String
     var phone: String
+    
+    static func getUserData() -> User {
+        User(name: "", phone: "")
+    }
 }
