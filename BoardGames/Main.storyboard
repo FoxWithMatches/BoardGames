@@ -24,6 +24,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="tintColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="zko-nN-vgd" kind="show" identifier="description" trigger="accessoryAction" id="PLI-SG-lVb"/>
                                 </connections>
@@ -54,7 +55,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="9BR-F5-Iwc" kind="presentation" modalPresentationStyle="fullScreen" id="e3e-4V-1iJ"/>
+                                    <segue destination="9BR-F5-Iwc" kind="presentation" identifier="purchase" modalPresentationStyle="fullScreen" id="e3e-4V-1iJ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlS-vf-bgb">
@@ -106,7 +107,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Номер телефона" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d2o-MZ-slq">
                                         <rect key="frame" x="0.0" y="49" width="314" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbC-MO-12g">
                                         <rect key="frame" x="0.0" y="98" width="314" height="31"/>
@@ -183,10 +184,10 @@
             </objects>
             <point key="canvasLocation" x="5227.536231884058" y="219.64285714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Gratitude View Controller-->
         <scene sceneID="E4F-zJ-zR4">
             <objects>
-                <viewController id="KVQ-NI-Ol5" sceneMemberID="viewController">
+                <viewController id="KVQ-NI-Ol5" customClass="GratitudeViewController" customModule="BoardGames" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d8d-ei-xMD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -262,6 +263,9 @@
                             <constraint firstItem="ijf-bf-MvU" firstAttribute="trailing" secondItem="JMw-HD-l7G" secondAttribute="trailing" constant="20" id="wgO-oj-Bln"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="aHa-iU-J0y" id="MFZ-eq-fqZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3sG-TK-1tW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="J0H-iI-fe7" userLabel="Exit" sceneMemberID="exit"/>
@@ -358,7 +362,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pCw-bq-zXw"/>
+        <segue reference="YAp-4u-nov"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="938.66668701171875" height="626.66668701171875"/>

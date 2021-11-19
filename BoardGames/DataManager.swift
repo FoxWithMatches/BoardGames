@@ -87,7 +87,4 @@ class DataManager {
         "560р", "1300р", "4000р",
         "1490р", "3490р", "1890р",
     ]
-    
-    let userName = "User"
-    let phone = "12345"
 }

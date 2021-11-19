@@ -17,14 +17,10 @@ class PurchaseViewController: UIViewController {
     
 //TODO: - Gроверить передачу моделей и их данные
     
-//    var game: BoardGame!
     private var user = User(name: "", phone: "")
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        imageOfGame.image = UIImage(named: game.name)
-//        nameGame.text = game.name
-//        priceGame.text = "Цена: \(game.price)"
         
         nameTF.delegate = self
         nameTF.returnKeyType = .next

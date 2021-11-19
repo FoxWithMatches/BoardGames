@@ -10,7 +10,6 @@ import UIKit
 class GratitudeViewController: UIViewController {
 
     @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var imageView: UIImageView!
     
     var user: User!
     
@@ -18,7 +17,5 @@ class GratitudeViewController: UIViewController {
         super.viewDidLoad()
         
         nameLabel.text = "\(user.name), ждем Вас снова!"
-        //внести картинку в модель
-        imageView.image = UIImage(named: image.Image)
     }
 }
