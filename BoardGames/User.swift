@@ -6,15 +6,10 @@
 //
 
 struct User {
-    let name: String
-    let phone: String
-}
-
-extension User {
+    var name: String
+    var phone: String
+    
     static func getUserData() -> User {
-        let data = DataManager.shared
-
-       return  User(name: data.userName,
-             phone: data.phone)
+        User(name: "", phone: "")
     }
 }

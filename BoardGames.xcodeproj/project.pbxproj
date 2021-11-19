@@ -18,6 +18,7 @@
 		98B138C527417F0B0055AE8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B138C427417F0B0055AE8A /* Main.storyboard */; };
 		D04B209B2742F2AB00E3415D /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04B209A2742F2AB00E3415D /* DescriptionViewController.swift */; };
 		D06037282746441A00813CCF /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06037272746441A00813CCF /* AboutUsViewController.swift */; };
+		EAA93C8527465A110013AA23 /* GratitudeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA93C8427465A110013AA23 /* GratitudeViewController.swift */; };
 		EFE9E15E27413925004460FC /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE9E15D27413925004460FC /* PurchaseViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		98B138C427417F0B0055AE8A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D04B209A2742F2AB00E3415D /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		D06037272746441A00813CCF /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		EAA93C8427465A110013AA23 /* GratitudeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GratitudeViewController.swift; sourceTree = "<group>"; };
 		EFE9E15D27413925004460FC /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,7 @@
 				98B138C0273FE1C50055AE8A /* BoardGamesListViewController.swift */,
 				D04B209A2742F2AB00E3415D /* DescriptionViewController.swift */,
 				EFE9E15D27413925004460FC /* PurchaseViewController.swift */,
+				EAA93C8427465A110013AA23 /* GratitudeViewController.swift */,
 				9895BF48273EC2E5008713DE /* Assets.xcassets */,
 				98B138C427417F0B0055AE8A /* Main.storyboard */,
 				D06037272746441A00813CCF /* AboutUsViewController.swift */,
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA93C8527465A110013AA23 /* GratitudeViewController.swift in Sources */,
 				98B138BF273FDF470055AE8A /* BoardGame.swift in Sources */,
 				D06037282746441A00813CCF /* AboutUsViewController.swift in Sources */,
 				98B138BD273FDC270055AE8A /* DataManager.swift in Sources */,
