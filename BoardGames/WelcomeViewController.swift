@@ -19,6 +19,7 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         welcomeLabel.text = welcome.text
         welcomeImage.image = UIImage(named: welcome.image)
+        welcomeImage.layer.cornerRadius = 20
     }
     
 }
