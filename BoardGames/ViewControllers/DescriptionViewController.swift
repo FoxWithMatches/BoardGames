@@ -19,7 +19,6 @@ class DescriptionViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.title = game.name
         imageOfGameLabel.image = UIImage(named: game.name)
-        imageOfGameLabel.layer.cornerRadius = 20
         descriptionLabel.text = game.description
         priceLabel.text = "Цена: \(game.price)"
     }

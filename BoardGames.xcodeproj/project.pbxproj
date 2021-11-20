@@ -74,24 +74,72 @@
 		9895BF3E273EC2E1008713DE /* BoardGames */ = {
 			isa = PBXGroup;
 			children = (
-				9895BF3F273EC2E1008713DE /* AppDelegate.swift */,
-				9895BF41273EC2E1008713DE /* SceneDelegate.swift */,
-				98B138BE273FDF470055AE8A /* BoardGame.swift */,
-				98B138C2274147420055AE8A /* User.swift */,
-				28DACC4F27478F7E0048297F /* WelcomeModel.swift */,
+				EA22F9FF2749755000C7D5CF /* App */,
+				EA22FA002749757A00C7D5CF /* Services */,
+				EA22F9FD27496E1C00C7D5CF /* Models */,
+				EA22F9FC27496E0200C7D5CF /* ViewControllers */,
+				EA22F9FE27496E3400C7D5CF /* Storyboards */,
+				EA22FA012749759700C7D5CF /* Resources */,
+			);
+			path = BoardGames;
+			sourceTree = "<group>";
+		};
+		EA22F9FC27496E0200C7D5CF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				28DACC4D27478E780048297F /* WelcomeViewController.swift */,
-				98B138BC273FDC270055AE8A /* DataManager.swift */,
 				98B138C0273FE1C50055AE8A /* BoardGamesListViewController.swift */,
 				D04B209A2742F2AB00E3415D /* DescriptionViewController.swift */,
 				EFE9E15D27413925004460FC /* PurchaseViewController.swift */,
 				EAA93C8427465A110013AA23 /* GratitudeViewController.swift */,
 				D06037272746441A00813CCF /* AboutUsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EA22F9FD27496E1C00C7D5CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				28DACC4F27478F7E0048297F /* WelcomeModel.swift */,
+				98B138BE273FDF470055AE8A /* BoardGame.swift */,
+				98B138C2274147420055AE8A /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA22F9FE27496E3400C7D5CF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 				98B138C82748F4200055AE8A /* Main.storyboard */,
-				9895BF48273EC2E5008713DE /* Assets.xcassets */,
 				9895BF4A273EC2E5008713DE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EA22F9FF2749755000C7D5CF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9895BF3F273EC2E1008713DE /* AppDelegate.swift */,
+				9895BF41273EC2E1008713DE /* SceneDelegate.swift */,
 				9895BF4D273EC2E5008713DE /* Info.plist */,
 			);
-			path = BoardGames;
+			path = App;
+			sourceTree = "<group>";
+		};
+		EA22FA002749757A00C7D5CF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				98B138BC273FDC270055AE8A /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EA22FA012749759700C7D5CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9895BF48273EC2E5008713DE /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,9 +365,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 39CH778QQC;
+				DEVELOPMENT_TEAM = 2V3Q6RCHJL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BoardGames/Info.plist;
+				INFOPLIST_FILE = BoardGames/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -345,9 +393,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 39CH778QQC;
+				DEVELOPMENT_TEAM = 2V3Q6RCHJL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BoardGames/Info.plist;
+				INFOPLIST_FILE = BoardGames/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

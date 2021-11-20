@@ -14,12 +14,10 @@ class WelcomeViewController: UIViewController {
     
     public let welcome = WelcomeScreen.getWelcome()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         welcomeLabel.text = welcome.text
         welcomeImage.image = UIImage(named: welcome.image)
         welcomeImage.layer.cornerRadius = 20
     }
-    
 }

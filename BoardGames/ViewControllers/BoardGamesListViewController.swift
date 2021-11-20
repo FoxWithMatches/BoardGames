@@ -88,18 +88,6 @@ class BoardGamesListViewController: UITableViewController {
         }
         performSegue(withIdentifier: "description", sender: boardGame)
     }
-    
-//    //MARK: - Navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let descriptionVC = segue.destination as? DescriptionViewController else {return}
-//        guard let indexPath = tableView.indexPathForSelectedRow else {return}
-//
-//        //Реализовать логику перехода после мерджа
-//    }
-    
-    @IBAction func unwind(for segue: UIStoryboardSegue) {
-       
-    }
 }
 
 //MARK: - UISearchResultsUpdating
