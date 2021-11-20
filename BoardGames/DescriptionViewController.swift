@@ -20,7 +20,7 @@ class DescriptionViewController: UIViewController {
         navigationItem.title = game.name
         imageOfGameLabel.image = UIImage(named: game.name)
         descriptionLabel.text = game.description
-        priceLabel.text = "Цена: \(game.price)руб."
+        priceLabel.text = "Цена: \(game.price)"
     }
     
     // MARK: - Navigation
