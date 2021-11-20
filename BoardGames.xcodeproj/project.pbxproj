@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28DACC4E27478E780048297F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DACC4D27478E780048297F /* WelcomeViewController.swift */; };
+		28DACC5027478F7E0048297F /* WelcomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DACC4F27478F7E0048297F /* WelcomeModel.swift */; };
 		9895BF40273EC2E1008713DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895BF3F273EC2E1008713DE /* AppDelegate.swift */; };
 		9895BF42273EC2E1008713DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895BF41273EC2E1008713DE /* SceneDelegate.swift */; };
 		9895BF49273EC2E5008713DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9895BF48273EC2E5008713DE /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28DACC4D27478E780048297F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		28DACC4F27478F7E0048297F /* WelcomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModel.swift; sourceTree = "<group>"; };
 		9895BF3C273EC2E1008713DE /* BoardGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9895BF3F273EC2E1008713DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9895BF41273EC2E1008713DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 				9895BF41273EC2E1008713DE /* SceneDelegate.swift */,
 				98B138BE273FDF470055AE8A /* BoardGame.swift */,
 				98B138C2274147420055AE8A /* User.swift */,
+				28DACC4F27478F7E0048297F /* WelcomeModel.swift */,
+				28DACC4D27478E780048297F /* WelcomeViewController.swift */,
 				98B138BC273FDC270055AE8A /* DataManager.swift */,
 				98B138C0273FE1C50055AE8A /* BoardGamesListViewController.swift */,
 				D04B209A2742F2AB00E3415D /* DescriptionViewController.swift */,
@@ -161,6 +167,7 @@
 			files = (
 				EAA93C8527465A110013AA23 /* GratitudeViewController.swift in Sources */,
 				98B138BF273FDF470055AE8A /* BoardGame.swift in Sources */,
+				28DACC4E27478E780048297F /* WelcomeViewController.swift in Sources */,
 				D06037282746441A00813CCF /* AboutUsViewController.swift in Sources */,
 				98B138BD273FDC270055AE8A /* DataManager.swift in Sources */,
 				98B138C3274147420055AE8A /* User.swift in Sources */,
@@ -168,6 +175,7 @@
 				9895BF40273EC2E1008713DE /* AppDelegate.swift in Sources */,
 				D04B209B2742F2AB00E3415D /* DescriptionViewController.swift in Sources */,
 				9895BF42273EC2E1008713DE /* SceneDelegate.swift in Sources */,
+				28DACC5027478F7E0048297F /* WelcomeModel.swift in Sources */,
 				98B138C1273FE1C50055AE8A /* BoardGamesListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
