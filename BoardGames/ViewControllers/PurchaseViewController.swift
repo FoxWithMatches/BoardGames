@@ -44,12 +44,15 @@ class PurchaseViewController: UIViewController {
         initialSetup()
     }
   
+    //MARK: - Keyboard picks up content
+    
     private func initialSetup() {
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hideKeyboard)))
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
+    
     @objc private func hideKeyboard() {
         self.view.endEditing(true)
     }
@@ -77,26 +80,34 @@ class PurchaseViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
+    // MARK: - Navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let gratitudeVC = segue.destination as? GratitudeViewController else { return }
         gratitudeVC.user = user
         
     }
     
-//TODO: - проверить алерты -
-    
     @IBAction func purchaseButton() {
         
+        guard let name = nameTF.text, !name.isEmpty,
+              let phone = phoneTF.text, !phone.isEmpty else {
+                  showAlert(title: "Ошибка!", message: "Введите данные", textField: nameTF)
+                  return
+              }
+        if let _ = Int(name) {
+            showAlert(title: "Ошибка!", message: "Введите Ваше имя кирилицей", textField: nameTF)
+            nameTF.text = nil
+        }
     }
 }
 
 extension PurchaseViewController {
  
-    private func showAlert(title: String, message: String) {
+    private func showAlert(title: String, message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-            self.nameTF.text = ""
-            self.phoneTF.text = ""
+            textField?.text = ""
         }
         
         alert.addAction(okAction)
