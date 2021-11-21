@@ -76,18 +76,6 @@ class BoardGamesListViewController: UITableViewController {
         let game = boardGamesList[indexPath.row]
         descriptionVC.game = game
     }
-    
-    // MARK: - Table view delegate
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let boardGame: BoardGame
-        
-        if isFiltering {
-            boardGame = filteredBoardGamesList[indexPath.row]
-        } else {
-            boardGame = boardGamesList[indexPath.row]
-        }
-        performSegue(withIdentifier: "description", sender: boardGame)
-    }
 }
 
 //MARK: - UISearchResultsUpdating
