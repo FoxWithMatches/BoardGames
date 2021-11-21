@@ -39,7 +39,7 @@ class BoardGamesListViewController: UITableViewController {
         if isFiltering {
             return filteredBoardGamesList.count
         }
-        return boardGamesList.isEmpty ? 0 : boardGamesList.count
+        return boardGamesList.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -68,28 +68,30 @@ class BoardGamesListViewController: UITableViewController {
         return cell
     }
     
-// MARK: - Navigation
-    
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let descriptionVC = segue.destination as? DescriptionViewController else {return}
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        let game = boardGamesList[indexPath.row]
-        descriptionVC.game = game
+        let boardGame: BoardGame
+        if isFiltering {
+            boardGame = filteredBoardGamesList[indexPath.row]
+        } else {
+            boardGame = boardGamesList[indexPath.row]
+        }
+        descriptionVC.game = boardGame
     }
 }
 
 //MARK: - UISearchResultsUpdating
 extension BoardGamesListViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        searchBar(textDidChange: searchController.searchBar.text!)
+        filterContentForSearchText(searchText: searchController.searchBar.text!)
     }
     
-    private func searchBar(textDidChange searchText: String) {
-        filteredBoardGamesList = boardGamesList
-
-        if searchText.isEmpty == false {
-            filteredBoardGamesList = boardGamesList.filter({ $0.name.contains(searchText) })
-        }
+    private func filterContentForSearchText(searchText: String) {
+        filteredBoardGamesList = boardGamesList.filter({ (boardGame: BoardGame) -> Bool in
+            return boardGame.name.lowercased().contains(searchText.lowercased())
+        })
         tableView.reloadData()
     }
 }
