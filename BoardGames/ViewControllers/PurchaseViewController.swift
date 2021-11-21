@@ -8,7 +8,7 @@
 import UIKit
 
 class PurchaseViewController: UIViewController {
-
+    
     @IBOutlet var imageOfGame: UIImageView!
     @IBOutlet var nameGame: UILabel!
     @IBOutlet var priceGame: UILabel!
@@ -18,13 +18,12 @@ class PurchaseViewController: UIViewController {
     
     
     var game: BoardGame!
-            
+    
     private var user = User.getUserData()
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        super.viewDidLoad()
+  
         imageOfGame.image = UIImage(named: game.name)
         nameGame.text = game.name
         priceGame.text = "Цена: \(game.price)"
@@ -43,7 +42,7 @@ class PurchaseViewController: UIViewController {
         
         initialSetup()
     }
-  
+    
     //MARK: - Keyboard picks up content
     
     private func initialSetup() {
@@ -70,7 +69,7 @@ class PurchaseViewController: UIViewController {
         
         if let keyboarddFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
             let keyboardHeight = keyboarddFrame.cgRectValue.height
-            self.stackBottomConstraint.constant = keyboardHeight - 100
+            self.stackBottomConstraint.constant = keyboardHeight - 200
             self.view.layoutIfNeeded()
         }
     }
@@ -103,7 +102,7 @@ class PurchaseViewController: UIViewController {
 }
 
 extension PurchaseViewController {
- 
+    
     private func showAlert(title: String, message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in

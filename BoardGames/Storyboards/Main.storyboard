@@ -48,9 +48,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hdb-28-S0E">
-                                <rect key="frame" x="0.0" y="0.0" width="599" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hdb-28-S0E">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6I-xD-Cnm">
                                 <rect key="frame" x="52" y="361" width="324" height="31"/>
@@ -86,17 +85,21 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fdn-mk-4mG" firstAttribute="trailing" secondItem="uB3-Y7-lQc" secondAttribute="trailing" constant="20" id="1bw-Cb-KSS"/>
+                            <constraint firstAttribute="bottom" secondItem="hdb-28-S0E" secondAttribute="bottom" id="3H9-gW-GAG"/>
                             <constraint firstItem="kvW-bo-J4h" firstAttribute="top" secondItem="fdn-mk-4mG" secondAttribute="top" constant="24" id="4cZ-oT-9Yb"/>
                             <constraint firstItem="kvW-bo-J4h" firstAttribute="leading" secondItem="fdn-mk-4mG" secondAttribute="leading" constant="20" id="CGK-Xg-Iq2"/>
                             <constraint firstItem="fdn-mk-4mG" firstAttribute="trailing" secondItem="F6I-xD-Cnm" secondAttribute="trailing" constant="52" id="GPY-Ra-B36"/>
                             <constraint firstItem="SFA-jC-Tgj" firstAttribute="top" secondItem="kvW-bo-J4h" secondAttribute="bottom" constant="14" id="GT5-WX-TnH"/>
+                            <constraint firstAttribute="trailing" secondItem="hdb-28-S0E" secondAttribute="trailing" id="HsQ-xl-uBS"/>
                             <constraint firstItem="fdn-mk-4mG" firstAttribute="trailing" secondItem="kvW-bo-J4h" secondAttribute="trailing" constant="20" id="KJa-0g-dfp"/>
                             <constraint firstItem="F6I-xD-Cnm" firstAttribute="leading" secondItem="fdn-mk-4mG" secondAttribute="leading" constant="52" id="LMf-xs-xjW"/>
                             <constraint firstItem="uB3-Y7-lQc" firstAttribute="leading" secondItem="fdn-mk-4mG" secondAttribute="leading" constant="20" id="Toa-ae-k2t"/>
                             <constraint firstItem="uB3-Y7-lQc" firstAttribute="top" secondItem="F6I-xD-Cnm" secondAttribute="bottom" constant="33" id="V2t-8u-ego"/>
+                            <constraint firstItem="hdb-28-S0E" firstAttribute="leading" secondItem="fdn-mk-4mG" secondAttribute="leading" id="e66-x4-aLN"/>
                             <constraint firstItem="SFA-jC-Tgj" firstAttribute="leading" secondItem="fdn-mk-4mG" secondAttribute="leading" constant="136" id="i90-sZ-rO6"/>
                             <constraint firstItem="fdn-mk-4mG" firstAttribute="bottom" secondItem="uB3-Y7-lQc" secondAttribute="bottom" constant="38" id="lr9-Yf-Ddl"/>
                             <constraint firstItem="F6I-xD-Cnm" firstAttribute="top" secondItem="kvW-bo-J4h" secondAttribute="bottom" constant="52" id="ooo-0b-bLA"/>
+                            <constraint firstItem="hdb-28-S0E" firstAttribute="top" secondItem="Rbl-JM-PvA" secondAttribute="top" id="rkx-Hc-nBc"/>
                             <constraint firstItem="fdn-mk-4mG" firstAttribute="trailing" secondItem="SFA-jC-Tgj" secondAttribute="trailing" constant="137" id="vBw-Xf-40t"/>
                             <constraint firstItem="F6I-xD-Cnm" firstAttribute="top" secondItem="SFA-jC-Tgj" secondAttribute="bottom" constant="17" id="xLm-BE-dXL"/>
                         </constraints>

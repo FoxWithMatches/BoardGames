@@ -8,7 +8,7 @@
 import UIKit
 
 class DescriptionViewController: UIViewController {
-
+    
     @IBOutlet var imageOfGameLabel: UIImageView!
     @IBOutlet var descriptionLabel: UITextView!
     @IBOutlet var priceLabel: UILabel!
@@ -24,14 +24,13 @@ class DescriptionViewController: UIViewController {
     }
     
     // MARK: - Navigation
-        
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            guard let purchaseVC = segue.destination as? PurchaseViewController else {return}
-            purchaseVC.game = game
-        }
-        
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let purchaseVC = segue.destination as? PurchaseViewController else {return}
+        purchaseVC.game = game
     }
-    
-    
-    
+}
+
+
+
 

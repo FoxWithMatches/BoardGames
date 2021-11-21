@@ -8,9 +8,8 @@
 import UIKit
 
 class AboutUsViewController: UIViewController {
-   
-    @IBOutlet var aboutUsOutlet: UILabel!
     
+    @IBOutlet var aboutUsOutlet: UILabel!
     @IBOutlet var photoOne: UIImageView!
     @IBOutlet var photoTwo: UIImageView!
     @IBOutlet var photoThree: UIImageView!
@@ -24,7 +23,7 @@ class AboutUsViewController: UIViewController {
             """
         tabBarController?.tabBar.isHidden = false
     }
-   
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         photoOne.layer.cornerRadius = photoOne.frame.width / 2
@@ -35,6 +34,6 @@ class AboutUsViewController: UIViewController {
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-       
+        
     }
 }

@@ -12,7 +12,7 @@ class BoardGamesListViewController: UITableViewController {
     //MARK: - Public properties
     var boardGamesList = BoardGame.getBoardGamesList()
     var filteredBoardGamesList = BoardGame.getBoardGamesList()
-
+    
     //MARK: - Private properties
     private let searchController = UISearchController(searchResultsController: nil)
     private var searchBarIsEmpty: Bool {
@@ -22,7 +22,7 @@ class BoardGamesListViewController: UITableViewController {
     private var isFiltering: Bool {
         return searchController.isActive && !searchBarIsEmpty
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 80

@@ -8,7 +8,7 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
+    
     @IBOutlet var welcomeImage: UIImageView!
     @IBOutlet var welcomeLabel: UILabel!
     

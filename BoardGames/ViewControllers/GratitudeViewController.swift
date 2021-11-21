@@ -8,7 +8,7 @@
 import UIKit
 
 class GratitudeViewController: UIViewController {
-
+    
     @IBOutlet var nameLabel: UILabel!
     
     var user: User!
